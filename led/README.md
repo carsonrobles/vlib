@@ -11,6 +11,6 @@ __16_wide_led__
 | mod  | I    | selects which display to drive LEDs with (currently only has two modes) |
 | led  | O    | 16 bit led output |
 
-__sseg__
+__sevseg__
 * Drives 4 digit seven segment display
 * Can display digits 0-F
