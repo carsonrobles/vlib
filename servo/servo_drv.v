@@ -8,7 +8,7 @@ module servo_drv (
     output reg  srv_o = 1'b0
 );
 
-    wire [19:0] on_t;
+    wire [14:0] on_t;
 
     servo_pos_dcd dcd (
         .pos  (pos ),
@@ -23,8 +23,8 @@ module servo_drv (
     end
 
     always @ (posedge clk) begin
-        if (cnt < on_t) srv_o <= 1'b1;
-        else            srv_o <= 1'b0;
+        if (cnt < {5'h0, on_t}) srv_o <= 1'b1;
+        else                    srv_o <= 1'b0;
     end
 
 endmodule
