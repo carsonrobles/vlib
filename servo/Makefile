@@ -1,16 +1,17 @@
-SRC=servo_drv.v
-TST=$(SRC:.v=_tb.v)
-EXE=$(SRC:.v=.out)
+TOP=servo_drv.v
+SRC=servo_pos_dcd.v
+TST=$(TOP:.v=_tb.v)
+EXE=$(TOP:.v=.out)
 VCD=$(TST:.v=.vcd)
-FLG=
+FLG=-DDEBUG
 
 .PHONY : all
 .PHONY : clean
 
 all : $(EXE)
 
-$(EXE) : $(SRC) $(TST)
-	iverilog $(FLG) -o $(EXE) $(SRC) $(TST)
+$(EXE) : $(TOP) $(SRC) $(TST)
+	iverilog $(FLG) -o $(EXE) $(TOP) $(SRC) $(TST)
 
 sim : $(EXE)
 	vvp $(EXE)

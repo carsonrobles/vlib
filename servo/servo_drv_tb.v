@@ -10,8 +10,8 @@ module servo_drv_tb;
     );
 
     initial begin
-		$dumpfile("servo_drv_tb.vcd");
-		$dumpvars;
+        $dumpfile("servo_drv_tb.vcd");
+        $dumpvars;
 
         #1000
 
