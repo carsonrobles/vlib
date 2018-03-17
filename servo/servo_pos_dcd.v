@@ -1,9 +1,13 @@
-module servo_pos_dcd (
-    input  wire [ 7:0] deg,
+`define SERVO_DCD_START X'h0
+`define SERVO_DCD_END   X'h0
+`define SERVO_DCD_STEP  ((`SERVO_DCD_END - `SERVO_DCD_START) / X'd180)
 
-    output wire [19:0] pos
+module servo_dcd (
+    input  wire pos,        // position in degrees (0 to 180)
+
+    output wire on_t        // on time
 );
 
-    /* decode degrees (0-180) to servo PMW bound */
+
 
 endmodule
