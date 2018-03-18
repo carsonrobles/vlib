@@ -2,6 +2,7 @@
 collection of potentially useful code blocks for hardware design
 
 ## in development:
+* servo driver
 
 ## future additions:
 * a test directory for each module
