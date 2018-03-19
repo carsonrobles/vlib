@@ -1,4 +1,4 @@
-# lib
+# vlib
 collection of potentially useful code blocks for hardware design
 
 ## structure
