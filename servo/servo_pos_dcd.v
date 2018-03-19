@@ -8,6 +8,6 @@ module servo_pos_dcd (
     output wire [14:0] on_t     // on time
 );
 
-
+    assign on_t = pos << 4;
 
 endmodule

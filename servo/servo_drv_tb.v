@@ -7,7 +7,8 @@ module servo_drv_tb;
 
     servo_drv uut (
         .clk   (clk  ),
-        .pos   (pos  ),
+        /*.pos   (pos  ),*/
+        .on_t  ({7'h0, pos}),
         .srv_o (srv_o)
     );
 

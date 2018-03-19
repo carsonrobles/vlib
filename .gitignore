@@ -1,6 +1,5 @@
 fab
 .ex
-*.dSYM
 *.out
 *.vcd
 *.swp

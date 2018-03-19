@@ -1,19 +1,21 @@
 `define SERVO_DRV_CNT_MAX 20'h3a980
 
 module servo_drv (
-    input  wire clk,
+    input  wire        clk,
 
-    input  wire [7:0] pos,
+    /*input  wire [7:0] pos,        will be implemented when decoder is done */
 
-    output reg  srv_o = 1'b0
+    input  wire [14:0] on_t,
+
+    output reg         srv_o = 1'b0
 );
 
-    wire [14:0] on_t;
+    /*wire [14:0] on_t;
 
     servo_pos_dcd dcd (
         .pos  (pos ),
         .on_t (on_t)
-    );
+    );                              will be implemented when decoder is done */
 
     reg [19:0] cnt = 20'h0;
 
