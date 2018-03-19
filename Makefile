@@ -1,4 +1,4 @@
-VDIR=debounce led ram sevseg
+VDIR=debounce led/16_wide_led led/sevseg ram servo
 
 .PHONY : all
 .PHONY : clean
