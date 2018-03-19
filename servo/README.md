@@ -4,6 +4,6 @@ __servo_drv.v__
 
 * generates a PWM signal to control a servo
 
-___TODO___
+__TODO__
 
 * create decoder that converts degrees into on time
