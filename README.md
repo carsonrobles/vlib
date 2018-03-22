@@ -10,8 +10,3 @@ collection of potentially useful code blocks for hardware design
 * servo driver
 * a sim directory for each module
 * an example directory for each module
-
-## future additions:
-* SPI master module
-* I2C master module
-* VGA driver module
