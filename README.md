@@ -1,5 +1,5 @@
 # vlib
-collection of potentially useful code blocks for hardware design
+collection of useful code blocks for hardware design
 
 ## structure
 * currently, most directories simply contain the one module they are named after (with the exception of the led directory), as more modules are added they will be grouped in a more organized fashion
